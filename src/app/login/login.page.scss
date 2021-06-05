@@ -1,0 +1,90 @@
+
+.div-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("https://magicmockups.com/media/bg/Free-03_960.jpg") center
+      center / cover;
+    height: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+  ion-item{
+    --min-height: 60px;
+  }
+  ion-input{
+    --padding-start: 10px;
+  }
+  
+  ion-button{
+    margin: 25px 10px 10px 10px;
+  
+  .dark{
+    font-size: small;
+  }
+  }
+  // ion-item {
+  //   --background: transparent;
+  //   height: 50px;
+  //   --highlight-background: none;
+  //   --background-focused: none;
+  //   --inner-padding-end: 0;
+  //   --padding-start: 0;
+  // }
+  // .div-form {
+  //   width: 100%;
+  //   height: 100%;
+  //   overflow: auto;
+  // }
+  // form {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  
+  //   ion-input {
+  //     --background: rgba(255, 255, 255, 0.2);
+  //     -webkit-backdrop-filter: blur(8px);
+  //     backdrop-filter: blur(8px);
+  //     border: none;
+  //     border-radius: 5px;
+  //     height: 100%;
+  //     outline: none;
+  //     --padding-start: 10px;
+  //     --inner-padding-end: 0;
+  //     --padding-end: 0;
+  //     --placeholder-opacity: 1;
+  //   }
+  
+  //   ion-button {
+  //     --background: rgba(8, 8, 8, 0.5);
+  //     -webkit-backdrop-filter: blur(5px);
+  //     backdrop-filter: blur(5px);
+  //     border-radius: 20px;
+  //     --background-activated: $background;
+  //     --color-hover: $background;
+  //   }
+  
+  //   ion-list {
+  //     padding: 20px;
+  //   }
+  // }
+  
+  // .input {
+  //   height: 100%;
+  // }
+  
+  // ion-list {
+  //   background: transparent;
+  // }
+  
+  // ion-content {
+  //   --background: transparent;
+  // }
+  // ion-content::before {
+  //   filter: blur(8px);
+  //   -webkit-filter: blur(8px);
+  // }
+  

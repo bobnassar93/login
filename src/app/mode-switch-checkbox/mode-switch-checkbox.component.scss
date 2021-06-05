@@ -1,0 +1,11 @@
+ion-item{
+    --border-style: none;
+    --background: transparent;
+    --inner-padding-end: 0;
+}
+
+.ios{
+    ion-toggle{
+        margin-left: 10px;
+    }
+}
