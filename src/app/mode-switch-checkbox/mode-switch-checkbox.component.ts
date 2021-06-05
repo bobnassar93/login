@@ -13,7 +13,7 @@ export class ModeSwitchCheckboxComponent implements OnInit {
   @Input()
   icon = "sunny";
 
-  constructor(private globalService: GlobalService) { }
+  constructor(public globalService: GlobalService) { }
 
   ngOnInit() {}
 
