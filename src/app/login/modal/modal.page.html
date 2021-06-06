@@ -1,12 +1,42 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>modal</ion-title>
+    <ion-title>Create account</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="dismiss()">Close</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
 
+<ion-content fullscreen>
+  <ion-list lines="full">
+
+    <ion-item detail="false">
+      <ion-label position="floating">Fullname<span class="required">*</span></ion-label>
+      <ion-input type="text" placeholder="Fullname"></ion-input>
+    </ion-item>
+
+    <ion-item detail="false">
+      <ion-label position="floating">Username<span class="required">*</span></ion-label>
+      <ion-input type="text" placeholder="Username"></ion-input>
+    </ion-item>
+
+    <ion-item detail="false">
+      <ion-label position="floating">Password<span class="required">*</span></ion-label>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Country<span class="required">*</span></ion-label>
+      <app-countries></app-countries>
+    </ion-item>
+    <ion-item detail="false">
+      <ion-label position="floating">Phone number<span class="required">*</span></ion-label>
+      <ion-input type="number" placeholder="Phone number"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="dark" class="ion-button">
+      Create
+    </ion-button>
+
+  </ion-list>
 </ion-content>
