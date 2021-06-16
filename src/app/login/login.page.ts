@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalService } from '../global.service';
-import { ModalController } from '@ionic/angular';
+import { IonRouterOutlet, ModalController } from '@ionic/angular';
 import { ModalPage } from './modal/modal.page';
 
 @Component({
@@ -10,15 +10,16 @@ import { ModalPage } from './modal/modal.page';
 })
 export class LoginPage implements OnInit {
   modal = null;
-  iconName = "moon";
-  constructor(private globalService: GlobalService, public modalController: ModalController) {
+  iconName = 'moon';
+  constructor(private globalService: GlobalService, public modalController: ModalController, private routerOutlet: IonRouterOutlet) {
 
   }
 
   async presentModal() {
     this.modal = await this.modalController.create({
       component: ModalPage,
-      cssClass: 'my-custom-class'
+      swipeToClose: true,
+      presentingElement: this.routerOutlet.nativeEl
     });
     return await this.modal.present();
   }
