@@ -7,7 +7,7 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./modal.page.scss'],
 })
 export class ModalPage implements OnInit {
-  
+
   constructor(private modalController: ModalController) { }
 
   ngOnInit() {
@@ -17,7 +17,7 @@ export class ModalPage implements OnInit {
     // using the injected ModalController this page
     // can "dismiss" itself and optionally pass back data
     this.modalController.dismiss({
-      'dismissed': true
+      dismissed: true
     });
   }
 }

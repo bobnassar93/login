@@ -11,9 +11,8 @@ import { ModalPage } from './modal/modal.page';
 export class LoginPage implements OnInit {
   modal = null;
   iconName = 'moon';
-  constructor(private globalService: GlobalService, public modalController: ModalController, private routerOutlet: IonRouterOutlet) {
 
-  }
+  constructor(private globalService: GlobalService, public modalController: ModalController, private routerOutlet: IonRouterOutlet) {}
 
   async presentModal() {
     this.modal = await this.modalController.create({
