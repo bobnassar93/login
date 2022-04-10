@@ -80,3 +80,4 @@ npm-debug.log*
 .angular/cache/13.3.2/babel-webpack/e38ff73987a99a7aef7fbec8e3d8b059.json
 .angular/cache/13.3.2/babel-webpack/f69fcabf2ed0053e4ae9b101be40fa67.json
 .angular/cache/13.3.2/babel-webpack/fed12d69702198d71177cbf684ce32ef.json
+*.pack_
