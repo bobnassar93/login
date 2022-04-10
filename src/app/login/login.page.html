@@ -1,31 +1,31 @@
 <ion-header translucent>
   <ion-toolbar>
     <ion-title>Login</ion-title>
-    <app-mode-switch-checkbox (onModeChange)="toggleMode($event)" [icon]="iconName" slot="end"></app-mode-switch-checkbox>
+    <app-mode-switch-checkbox (modeChange)="toggleMode($event)" [icon]="iconName" slot="end"></app-mode-switch-checkbox>
   </ion-toolbar>
 </ion-header>
 
 <ion-content fullscreen>
-    <ion-list lines="full">
-     
-      <ion-item detail="false">
-        <ion-input type="text" placeholder="Username" class="ion-no-padding input"></ion-input>
-      </ion-item>
+  <ion-list lines="full">
 
-      <ion-item detail="false">
-        <ion-input type="password" placeholder="Password" class="ion-no-padding input"></ion-input>
-      </ion-item>
-      <ion-button expand="block" color="light">
-        Login
-      </ion-button>
-  
-        <ion-item lines="none">
-          <ion-label style="text-align: center;">OR</ion-label>
-        </ion-item>
-  
-      <ion-button expand="block" class="btn-outline" color="dark" (click)="presentModal()" style="margin-top: 0;">
-        Create account
-      </ion-button>
-    </ion-list>
-    
+    <ion-item detail="false">
+      <ion-input type="text" placeholder="Username" class="ion-no-padding input"></ion-input>
+    </ion-item>
+
+    <ion-item detail="false">
+      <ion-input type="password" placeholder="Password" class="ion-no-padding input"></ion-input>
+    </ion-item>
+    <ion-button expand="block" color="light">
+      Login
+    </ion-button>
+
+    <ion-item lines="none">
+      <ion-label style="text-align: center;">OR</ion-label>
+    </ion-item>
+
+    <ion-button expand="block" class="btn-outline" color="dark" (click)="presentModal()" style="margin-top: 0;">
+      Create account
+    </ion-button>
+  </ion-list>
+
 </ion-content>

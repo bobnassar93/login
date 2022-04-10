@@ -8,16 +8,16 @@ import { GlobalService } from '../global.service';
 })
 export class ModeSwitchCheckboxComponent implements OnInit {
   @Output()
-  modeChange = new EventEmitter<any>();
+  modeChange = new EventEmitter<CustomEvent>();
 
   @Input()
   icon = 'sunny';
 
   constructor(public globalService: GlobalService) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
-  toggleMode(ev){
+  toggleMode(ev) {
     this.modeChange.emit(ev);
   }
 }
